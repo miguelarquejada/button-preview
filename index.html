@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Button Preview</title>
+</head>
+<body>
+  <label for="radiusValue">Border Radius</label>
+  <input onkeyup="changeRadius()" class="valueSquare" id="radiusValue" type="number" placeholder="Border Radius">
+
+  <label for="borderValue">Border</label>
+  <input onkeyup="changeBorder()" class="valueSquare" id="borderValue" type="number" placeholder="Border">
+
+  <label for="widthValue">Width</label>
+  <input onkeyup="changeWidth()" class="valueSquare" id="widthValue" type="number" placeholder="Width">
+
+  <label for="heightValue">Height</label>
+  <input onkeyup="changeHeight()" class="valueSquare" id="heightValue" type="number" placeholder="Width">
+
+  <label for="textValue">Text</label>
+  <input onkeyup="changeText()" class="valueSquare" id="textValue" type="text" placeholder="Text">
+
+  <div id="square"></div>
+
+  <div class="colors">
+    <div id="colorSquarePicker" class="inputColor">
+      <input onchange="changeColor()" type="color" id="squareColor" name="squareColor" value="#4BE9C7">
+      <label for="squareColor">Background</label>
+    </div>
+  
+    <div id="colorBorderPicker" class="inputColor">
+      <input onchange="changeBorder()" type="color" id="borderColor" name="borderColor" value="#000">
+      <label for="borderColor">Outline</label>
+    </div>
+
+    <div id="colorTextPicker" class="inputColor">
+      <input onchange="changeTextColor()" type="color" id="textColor" name="textColor" value="#000">
+      <label for="textColor">Text</label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
